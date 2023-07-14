@@ -149,7 +149,7 @@ func dumpSiteRecursively(rootUrl, dir string) pagesSlice {
 }
 
 func isFileStatic(path string) (string, bool) {
-	formats := []string{"css", "ico", "js", "woff", "woff2", "ttf", "eot"}
+	formats := []string{"css", "ico", "js", "woff", "woff2", "ttf", "eot", "svg"}
 	for _, format := range formats {
 		if strings.HasSuffix(path, "."+format) {
 			return "." + format, true
